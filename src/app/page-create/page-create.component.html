@@ -1,0 +1,64 @@
+<div fxLayout="column" fxLayoutAlign="space-around center">
+  <form #pageForm="ngForm" (ngSubmit)="onSubmit(pageForm)">
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>BookName</mat-label>
+        <input
+          matInput
+          placeholder="Outliers"
+          type="text"
+          [(ngModel)]="pageDetails.name"
+          name="name"
+          required
+        />
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Author</mat-label>
+        <input
+          matInput
+          placeholder="Malcolm Gladwell"
+          type="text"
+          [(ngModel)]="pageDetails.author"
+          name="author"
+          required
+        />
+      </mat-form-field>
+    </p>
+    <mat-form-field appearance="fill">
+      <mat-label>Genre</mat-label>
+      <mat-select [(ngModel)]="pageDetails.genre" name="genre" required>
+        <mat-option>None</mat-option>
+        <mat-option value="non fiction">Non Fiction</mat-option>
+        <mat-option value="fiction">Fiction</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input
+          matInput
+          placeholder="10"
+          type="number"
+          [(ngModel)]="pageDetails.price"
+          name="price"
+          required
+        />
+        <mat-icon matPrefix>attach_money</mat-icon>
+      </mat-form-field>
+    </p>
+    <div fxLayout="row" fxLayoutAlign="end center">
+      <button
+        mat-flat-button
+        color="warn"
+        type="submit"
+        target="blank"
+        name="action"
+        [disabled]="pageForm.invalid"
+      >
+        + Add Book
+      </button>
+    </div>
+  </form>
+</div>

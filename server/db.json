@@ -1,0 +1,39 @@
+{
+  "pages": [
+    {
+      "name": "wings of fire",
+      "author": "Abdul kalam",
+      "genre": "non fiction",
+      "price": 77,
+      "id": 1
+    },
+    {
+      "name": "Sapiens",
+      "author": "harari",
+      "genre": "non fiction",
+      "price": 89,
+      "id": 2
+    },
+    {
+      "name": "Art of happiness",
+      "author": "lama",
+      "genre": "non fiction",
+      "price": 1,
+      "id": 4
+    },
+    {
+      "name": "wings of fire",
+      "author": "fire",
+      "genre": "non fiction",
+      "price": 78,
+      "id": 5
+    },
+    {
+      "name": "wings",
+      "author": "Abdul kalam",
+      "genre": "non fiction",
+      "price": 67,
+      "id": 6
+    }
+  ]
+}
